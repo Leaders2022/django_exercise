@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
@@ -11,6 +12,10 @@
     <a href="{% url 'contact' %}">Contact</a>
 
     <h2>Services</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab quae recusandae inventore minus praesentium commodi doloremque quaerat, ut pariatur dolore. Voluptatibus ab corrupti omnis possimus. Aspernatur pariatur id quisquam mollitia!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Ab quae recusandae inventore minus praesentium commodi doloremque quaerat,
+        ut pariatur dolore. Voluptatibus ab corrupti omnis possimus. Aspernatur pariatur
+        id quisquam mollitia!</p>
+    <img src="{% static 'images/img1.jpg' %}" alt="">
 </body>
 </html>

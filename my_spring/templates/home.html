@@ -1,6 +1,12 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
+    
+    <link rel="stylesheet" href="{% static 'css/urembo.css' %}">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=p, initial-scale=1.0">
     <title>Essay Home</title>
@@ -10,9 +16,11 @@
     <a href="{% url 'services' %}">Services</a>
     <a href="{% url 'contact' %}">Contact</a>
 
-    <p>This is the home page</p>
+    <h2>This is my home page</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, earum neque modi nisi harum eum ea numquam necessitatibus! Accusamus assumenda obcaecati corporis sunt 
         saepe sint voluptatibus inventore mollitia pariatur ipsam.</p>
+        
+    <img src="{% static 'images/img1.jpg' %}" alt="">
         
 </body>
 </html>
